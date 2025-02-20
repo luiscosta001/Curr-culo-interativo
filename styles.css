@@ -1,0 +1,276 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #1a1a1a;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #e11818;
+    text-decoration: none;
+}
+
+/* Estilos do header */
+header {
+    background-color: #1a1a1a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 10px auto;
+    max-width: 1000px;
+    background-color: #333333;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #e11818;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #555555;
+    color: white;
+}
+
+form button {
+    background-color: #e11818;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #c91717;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1a1a1a;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Layout para o título e gif ao lado */
+.introducao-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.gif {
+    animation: balanco 2s infinite ease-in-out;
+}
+
+.gif img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gif img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+/* Container para alinhar foto e texto */
+.apresentacao-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#foto-Apresentacao {
+    max-width: 180px;
+    height: auto;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+#texto-apresentacao {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 8px;
+    flex-grow: 1;
+}
+
+#habilidades, #objetivo, #sobre-projeto, #contato {
+    padding: 30px;
+    margin-top: 20px;
+    background-color: #222222;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#habilidades p, #objetivo p, #sobre-projeto p, #contato p {
+    color: #dddddd;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#habilidades h2, #objetivo h2, #sobre-projeto h2, #contato h2 {
+    color: #e11818;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza o título */
+    text-transform: uppercase;
+}
+
+/* Efeito de fade-in no título */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-family: 'Sixtyfour', sans-serif;
+    color: #e11818;
+    text-align: left;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Estilos para os botões de contato */
+.contato-botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.botao-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+    font-weight: bold;
+}
+
+.botao-contato i {
+    margin-right: 10px;
+    font-size: 22px;
+    transition: transform 0.3s ease;
+}
+
+.botao-contato:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #218838;
+}
+
+.botao-contato:active {
+    transform: translateY(1px);
+}
+
+.fas, .fab {
+    font-size: 26px;
+    transition: transform 0.3s ease;
+}
+
+.botao-contato:hover i {
+    transform: scale(1.2);
+}
